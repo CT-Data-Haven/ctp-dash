@@ -47,14 +47,14 @@
                     "n": "6",
                     "chartTitle": "Annual violent crime rate per 1,000 residents, 2013-2015",
                     "class": "mapContainer",
-                    "source": "NHPD",
+                    "source": "DataHaven analysis of NHPD records",
                     "hasSvg": false
                 }, {
                     "id": "property-crime-map",
                     "n": "6",
                     "chartTitle": "Annual property crime rate per 1,000 residents, 2013-2015",
                     "class": "mapContainer",
-                    "source": "NHPD",
+                    "source": "DataHaven analysis of NHPD records",
                     "hasSvg": false
                 }
             ]

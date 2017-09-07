@@ -37,7 +37,7 @@
                 }, {
                     "id": "underemployment-trend",
                     "n": "6",
-                    "chartTitle": "Underemployment, 2012-2020",
+                    "chartTitle": "Underemployment rate, New Haven, 2012-2020",
                     "class": "chart210",
                     "source": "DataHaven Community Wellbeing Survey",
                     "hasSvg": true

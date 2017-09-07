@@ -151,6 +151,8 @@ function makeDiplomaTrend(data) {
     var line = chart.addSeries('name', dimple.plot.line);
     line.lineMarkers = true;
 
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', line);
+
     chart.draw();
 
     var tip = d3.tip()

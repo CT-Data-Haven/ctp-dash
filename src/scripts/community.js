@@ -68,11 +68,13 @@ function makeSafetyTrend(data) {
     var line = chart.addSeries('name', dimple.plot.line);
     line.lineMarkers = true;
 
+    chart.addLegend('80%', '8%', '10%', '20%', 'right', line);
+
     chart.draw();
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .html(trendTip);
+        .html(trendGroupTip);
 
     svg.selectAll('circle.dimple-marker')
         .call(tip)

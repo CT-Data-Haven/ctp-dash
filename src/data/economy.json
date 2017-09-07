@@ -30,7 +30,7 @@
                 {
                     "id": "jobs-trend",
                     "n": "12",
-                    "chartTitle": "Total employment in New Haven, 2002-2016",
+                    "chartTitle": "Number of New Haven residents who are employed, 2002-2016",
                     "class": "chart300",
                     "source": "Bureau of Labor Statistics",
                     "hasSvg": true
@@ -39,6 +39,6 @@
         }
     ],
     "otherCharts": [
-        
+
     ]
 }
