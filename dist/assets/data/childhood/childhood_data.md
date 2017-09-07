@@ -10,6 +10,6 @@ As of June 2017, early childhood data includes:
 * [Chronic absenteeism in grades K-3, 2015-16](chronic_absenteeism.csv)
 * [Low-income rates for children under 6 by race, 2015](low_income_kids_by_race.csv)
 
-The data is hosted on GitHub in the [`childhood`](../) folder of this repository.
+The data is hosted on GitHub in the [`childhood`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.
