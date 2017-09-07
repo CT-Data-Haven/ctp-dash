@@ -12,4 +12,4 @@ As of June 2017, workforce data includes:
 
 The data is hosted on GitHub in the [`workforce`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../R) are available under the `master` branch with Markdown documentation.
