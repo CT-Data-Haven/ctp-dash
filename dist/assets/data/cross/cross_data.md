@@ -11,4 +11,4 @@ As of June 2017, cross-sector data includes:
 
 The data is hosted on GitHub in the [`cross`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../R) are available under the `master` branch with Markdown documentation.
