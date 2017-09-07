@@ -1,0 +1,108 @@
+{
+    "sector": "",
+    "title": "",
+    "shortTitle": "",
+    "longName": "",
+    "vision": "",
+    "ctpUrl": "",
+    "targets": [
+        {
+            "name": "",
+            "content": ""
+        }, {
+            "name": "",
+            "content": ""
+        }, {
+            "name": "",
+            "content": ""
+        }
+    ],
+    "definitions": [
+        {
+            "word": "",
+            "definition": ""
+        }
+    ],
+    "targetCharts": [
+        {
+            "row": "",
+            "charts": [
+                {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }, {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }
+            ]
+        }, {
+            "row": "",
+            "charts": [
+                {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }, {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }
+            ]
+        }
+    ],
+    "otherCharts": [
+        {
+            "row": "",
+            "charts": [
+                {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }, {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }
+            ]
+        }, {
+            "row": "",
+            "charts": [
+                {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }, {
+                    "id": "",
+                    "n": "",
+                    "chartTitle": "",
+                    "class": "",
+                    "source": "",
+                    "hasSvg": false
+                }
+            ]
+        }
+    ]
+}

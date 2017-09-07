@@ -1,0 +1,78 @@
+// modeling after keen.io dashboards, which have changed in last version
+.chart-wrapper {
+    background: $white;
+    border: 1px solid $grayborder;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+
+    .chart-title {
+        color: $lightblack;
+        font-weight: 300;
+        
+        padding: 7px 10px 4px;
+        border-bottom: 1px solid darken($grayborder, 8);
+    }
+
+    .chart-stage {
+        overflow: hidden;
+        padding: 5px 10px;
+        position: relative;
+    }
+
+    .chart-notes {
+        background: lighten($graybkgnd, 8);
+        border-top: 1px solid $grayborder;
+        color: $graytxt;
+        font-size: 0.7em;
+        padding: 8px 10px 5px;
+    }
+
+    .dark-title {
+        background-color: $darkheader;
+        h4 {
+            color: $whitetxt;
+        }
+
+        .panel-heading {
+            background-color: $graybkgnd;
+            border-color: darken($graybkgnd, 8);
+        }
+    }
+}
+
+.goal-charts {
+    background-color: $goal;
+    border-color: darken($goal, 4);
+    @extend %chart-holder;
+    margin: 0 0 3rem 0;
+    @include breakpoint($laptop) {
+        margin: 0 0 3rem 2rem;
+    }
+    h5 {
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+.other-charts {
+    background-color: $other;
+    border-color: darken($other, 4);
+    @extend %chart-holder;
+    margin: 0 0 3rem 0;
+    @include breakpoint($laptop) {
+        margin: 1rem 0 3rem 2rem;
+    }
+    h5 {
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+.jump-links {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    a {
+        padding-left: 5px;
+    }
+}

@@ -1,178 +1,190 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cross-Sector Measures - City Transformation Plan</title>
 
-    <title>Cross-Sector Measures - City Transformation Plan</title>
+        <link rel="stylesheet" href="../assets/vendor.css" />
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../assets/main.css" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/vendor/keen-dashboards.css" />
-    <link rel="stylesheet" href="../css/main-styles.css" />
+        <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../assets/img/favicon-16x16.png" sizes="16x16" />
+    </head>
 
-    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
-</head>
+    <body class="application">
 
-<body class="application">
+        
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../">
-                    <span class="glyphicon glyphicon-chevron-left"></span> City Transformation Plan:
-                </a>
-                <div class="navbar-brand">Cross-Sector Measures</div>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../">Dashboard home</a></li>
-                </ul>
-            </div>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span>
+                     City Transformation Plan
+                </span>
+            </a>
+            
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../">Dashboard home</a></li>
+                
+            </ul>
         </div>
     </div>
-
-    <div class="container" id="top">
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="plank" id="plank">
-                    <h2>Cross-Sector Measures</h2>
-                    <p class="explanation bg-danger">
-                        These measures relate to all other sectors included in the dashboard. Cross-sector measures, such as financial wellbeing, give insight into the foundations of communities' lives.
-                        <!-- <strong>Vision: </strong> All New Haven children, birth through age 8, will be healthy, safe, thriving in nurturing families, and prepared to be successful, lifelong learners -->
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-3">
-
-                <div class="definition">
-                    <h4>Definitions</h4>
-                    <dl>
-                        <dt>Personal wellbeing index</dt>
-                        <dd>
-                            The personal wellbeing index is calculated by DataHaven on a scale of 0 to 100, based on residents' self-reported happiness, health, anxiety, depression, life satisfaction, and time to enjoy their lives.
-                        </dd>
-
-                    </dl>
-                </div>
-
-            </div>
-
-            <div class="col-sm-9">
-
-                <!-- <ul class="nav nav-pills">
-                    <li role="link"><a href="#goal-charts" class="jump-link">Target indicators</a></li>
-                    <li role="link"><a href="#other-charts" class="jump-link">Other indicators</a></li>
-                </ul> -->
-
-                <div class="goal-charts" id="goal-charts">
-                    <!-- <h5>Target indicators</h5> -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Total population, 1980-2015
-                                </div>
-                                <div class="chart-stage">
-                                    <div id="total-pop-trend" class="chart300"><svg></svg></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: US Census Bureau
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Personal wellbeing index, 2015
-                                </div>
-                                <div class="chart-stage">
-                                    <div id="per-wellbeing" class="chart300"></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: 2015 DataHaven Community Wellbeing Survey
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Financial wellbeing, 2015
-                                </div>
-                                <div class="chart-stage">
-                                    <div id="fin-wellbeing" class="mapContainer"></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: 2015 DataHaven Community Wellbeing Survey
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="chart-wrapper">
-                                <div class="chart-title">
-                                    Poverty rate by age and race, 2015
-                                </div>
-                                <div class="chart-stage">
-                                    <div id="poverty-age-race" class="chart240"></div>
-                                </div>
-                                <div class="chart-notes">
-                                    Source: US Census Bureau, American Community Survey
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="text-right">
-                    <a href="#top" class="jump-link">Back to top</a>
-                </div>
-
-                <!-- <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="chart-wrapper">
-                            <div class="chart-title">
-
-                            </div>
-                            <div class="chart-stage">
-                                <div id=""></div>
-                            </div>
-                            <div class="chart-notes">
-                                Source:
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+</div>
 
 
-            </div>
 
-        </div>
+    
 
-    </div>
-
+<div class="container" id="top">
     <div class="plank">
-        <h4>Key</h4>
-        <ul class="list-inline key">
+    <h2 class="text-uppercase">Cross-Sector Measures</h2>
+    <p class="goal"><strong>Vision: </strong>These measures relate to all other sectors included in the dashboard. Cross-sector measures, such as financial wellbeing, give insight into the foundations of communities&#x27; lives.</p>
+</div>
+
+
+    <div class="row">
+        <div class="col-sm-3">
+            
+
+            
+                <div class="definition">
+    <h4>Definitions</h4>
+    <dl>
+        
+            <dt>
+                Personal wellbeing index
+            </dt>
+            <dd>
+                The personal wellbeing index is calculated by DataHaven on a scale of 0 to 100, based on residents&#x27; self-reported happiness, health, anxiety, depression, life satisfaction, and time to enjoy their lives.
+            </dd>
+        
+    </dl>
+</div>
+
+            
+        </div>
+
+        <div class="col-sm-9">
+            
+
+            <div class="goal-charts" id="goal-charts">
+                <h5>Target indicators</h5>
+                
+                    <div class="row">
+                        
+                            <div class="col-md-6">
+    <div class="chart-wrapper">
+        <div class="chart-title">
+            Total population, 1980-2015
+        </div>
+        <div class="chart-stage">
+            <div id="total-pop-trend" class="chart300">
+                
+                    <svg></svg>
+                
+                
+            </div>
+        </div>
+        <div class="chart-notes">
+            Source: US Census Bureau
+        </div>
+    </div>
+</div>
+
+                        
+                            <div class="col-md-6">
+    <div class="chart-wrapper">
+        <div class="chart-title">
+            Personal wellbeing index, 2015
+        </div>
+        <div class="chart-stage">
+            <div id="per-wellbeing" class="chart300">
+                
+                
+            </div>
+        </div>
+        <div class="chart-notes">
+            Source: 2015 DataHaven Community Wellbeing Survey
+        </div>
+    </div>
+</div>
+
+                        
+                    </div>
+                
+                    <div class="row">
+                        
+                            <div class="col-md-12">
+    <div class="chart-wrapper">
+        <div class="chart-title">
+            Financial wellbeing, 2015
+        </div>
+        <div class="chart-stage">
+            <div id="fin-wellbeing" class="mapContainer">
+                
+                
+            </div>
+        </div>
+        <div class="chart-notes">
+            Source: 2015 DataHaven Community Wellbeing Survey
+        </div>
+    </div>
+</div>
+
+                        
+                    </div>
+                
+                    <div class="row">
+                        
+                            <div class="col-md-7">
+    <div class="chart-wrapper">
+        <div class="chart-title">
+            Poverty rate by age and race, 2015
+        </div>
+        <div class="chart-stage">
+            <div id="poverty-age-race" class="chart240">
+                
+                
+            </div>
+        </div>
+        <div class="chart-notes">
+            Source: US Census Bureau, American Community Survey
+        </div>
+    </div>
+</div>
+
+                        
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="text-right">
+    <a href="#top" class="jump-link">Back to top</a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="plank">
+    <h4>Key</h4>
+    <div class="key">
+        <ul>
             <li><strong>CT: </strong>Connecticut</li>
             <li><strong>GNH: </strong>Greater New Haven region</li>
             <li><strong>NHV low-income: </strong>Low-income neighborhoods in New Haven</li>
@@ -180,30 +192,38 @@
         </ul>
     </div>
 
-    <div class="plank">
-        <h5><a href="https://github.com/CT-Data-Haven/ctp-dash/blob/master/dist/data/cross/cross_data.md">Download the data</a></h5>
-    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
-    <script src="../js/globals.js"></script>
-    <script src="../js/cross.js"></script>
 
-    <script>
-        var nav_gap = 64;
-        $('.jump-link').on('click', function() {
-            var target = $(this).attr('href');
-            var offset = $(target).offset().top - nav_gap;
+<div class="plank">
+    <h5><a href="https://github.com/CT-Data-Haven/ctp-dash/blob/master/dist/data/cross/cross_data.md">Download the data</a></h5>
+</div>
 
-            $('html, body').animate({
-                scrollTop: offset
-            }, 'slow');
-            return false;
-        });
-    </script>
 
-</body>
+
+
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../assets/vendor.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/1.0.1/simple_statistics.min.js"></script>
+
+        
+        <script>
+            var nav_gap = 64;
+            $('.jump-link').on('click', function() {
+                var target = $(this).attr('href');
+                var offset = $(target).offset().top - nav_gap;
+
+                $('html, body').animate({
+                    scrollTop: offset
+                }, 'slow');
+                return false;
+            });
+        </script>
+        <script src="../assets/scripts/addons.js"></script>
+        <script src="../assets/scripts/cross.js"></script>
+
+    </body>
 </html>
