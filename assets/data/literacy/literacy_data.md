@@ -4,8 +4,11 @@ Data used for the City Transformation Plan dashboard's [adult literacy page](htt
 
 As of September 2017, adult literacy data includes:
 
-*
+* [Adults without high school diplomas, 2000-2015](acs_no_high_school_diploma_trend.csv)
+* [Adults without high school diplomas by location, 2015](acs_no_high_school_diploma_by_location.csv)
+* [Adults without high school diplomas by neighborhood, 2015](acs_no_high_school_diploma_by_neighborhood.csv)
+* [Adults without high school diplomas by race, 2015](acs_no_high_school_diploma_by_race.csv)
 
-The data is hosted on GitHub in the [`literacy`](../) folder of this repository.
+The data is hosted on GitHub in the [`literacy`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.

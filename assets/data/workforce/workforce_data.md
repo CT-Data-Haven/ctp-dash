@@ -10,6 +10,6 @@ As of June 2017, workforce data includes:
 * [Underemployment rates by location, 2015](childcare.csv)
 * [Unemployment rate, 2003-2016](low_income_kids_by_race.csv)
 
-The data is hosted on GitHub in the [`workforce`](../) folder of this repository.
+The data is hosted on GitHub in the [`workforce`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.

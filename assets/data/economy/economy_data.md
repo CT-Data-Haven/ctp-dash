@@ -4,8 +4,8 @@ Data used for the City Transformation Plan dashboard's [economic development pag
 
 As of September 2017, economic development data includes:
 
-*
+* [Total employed residents, 2002-2016](total_employment_by_year.csv)
 
-The data is hosted on GitHub in the [`economy`](../) folder of this repository.
+The data is hosted on GitHub in the [`economy`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.

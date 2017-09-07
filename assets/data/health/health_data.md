@@ -8,6 +8,6 @@ As of June 2017, health data includes:
 * [Smoking and obesity rates by location, 2015](health_bars.csv)
 * [Trends in rates of obesity, smoking, food insecurity, and health insurance coverage, 2012-2020 (goal)](health_trends.csv)
 
-The data is hosted on GitHub in the [`health`](../) folder of this repository.
+The data is hosted on GitHub in the [`health`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.

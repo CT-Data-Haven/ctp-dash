@@ -11,6 +11,6 @@ As of June 2017, housing data includes:
 * [Homeownership rates by race and age, 2015](homeownership_by_race_age.csv)
 * [Homeownership rates by tract, 1970-2010](homeownership_tract_time.csv)
 
-The data is hosted on GitHub in the [`housing`](../) folder of this repository.
+The data is hosted on GitHub in the [`housing`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.

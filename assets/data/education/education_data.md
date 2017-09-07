@@ -4,8 +4,9 @@ Data used for the City Transformation Plan dashboard's [education and youth deve
 
 As of September 2017, education and youth development data includes:
 
-*
+* [High school graduation rate by location and by race, 2012-2016](graduation_rate_trends.csv)
+* [High school graduation rate by NHPS school, 2016](graduation_rate_by_school.csv)
 
-The data is hosted on GitHub in the [`education`](../) folder of this repository.
+The data is hosted on GitHub in the [`education`](./) folder of this repository.
 
-For technical users or anyone maintaining CTP datasets, [R scripts](https://github.com/CT-Data-Haven/ctp-dash/tree/master/R) are available under the `master` branch with Markdown documentation.
+For technical users or anyone maintaining CTP datasets, [R scripts](../../../../tree/master/R) are available under the `master` branch with Markdown documentation.
