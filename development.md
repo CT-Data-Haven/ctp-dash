@@ -1,37 +1,34 @@
 # City Transformation Plan dashboard -- Development
 
-This document contains an overview of the tools used to build draft 1 of the CTP dashboard, and guidance for its maintenance.
+This document contains an overview of the tools used to build draft 1 of the CTP dashboard, and guidance for its maintenance, updated in September 2017.
 
 ## Basic structure
 
 All code is pushed to the `master` branch. The `dist` folder is then pushed as a subtree to the `gh-pages` branch, following these directions: https://gist.github.com/cobyism/4730490. The folder structure is as follows:
 
 ```
-├── R
-|  ├── R_scripts
-|  ├── Rmd
-|  ├── input
+├── AUTHORS
+├── CHANGELOG
+├── Gruntfile.js
+├── LICENSE-MIT
+├── /R
 ├── README.md
+├── bower.json
+├── /bower_components
 ├── development.md
-└── dist
-   ├── bower_components
-   ├── css
-   ├── data
-   ├── favicon-16x16.png
-   ├── favicon-32x32.png
-   ├── img
-   ├── index.html
-   ├── js
-   ├── json
-   ├── pages
-   └── svg
+├── /dist
+├── /docs
+├── /node_modules
+├── package-lock.json
+├── package.json
+└── /src
 ```
 
 Note that the `gh-pages` branch begins at `/dist`.
 
 ## Major dependencies
 
-* All pages are made responsive with [Bootstrap](http://getbootstrap.com/), and built on top of [Keen.io](https://github.com/keen/dashboards) templates.
+* All pages are made responsive with [Bootstrap](http://getbootstrap.com/), and based on [Keen.io](https://github.com/keen/dashboards) templates.
 * A few javascript libraries, including Bootstrap's javascript components, depend on jQuery.
 * All charts depend on [D3.js v4](https://github.com/d3/d3). Most charts are drawn with [dimple.js](https://github.com/PMSI-AlignAlytics/dimple), though maps are drawn with an in-house chart in the `d3map.js` file. Other D3 plugins are used as well.
 * CSS is compiled from Sass.
@@ -39,15 +36,17 @@ Note that the `gh-pages` branch begins at `/dist`.
 
 ## Pages
 
-In addition to the `index.html` file which gives the overview indicators, each sector has an html file in the `pages` folder. Each html file has an associated javascript file with the same name. Containers for charts are each hard-coded in the html files---this could be improved upon and made more flexible.
+In addition to the `index.html` file which gives the overview indicators, each sector has an html file in the `pages` folder. Each html file has an associated javascript file with the same name.
 
-The front page is largely made up of a container for the [Isotope](https://isotope.metafizzy.co/) jQuery plugin. Using tabletop, data is pulled in from a Google sheet; that data is bound to an html element using D3 and formatted using Handlebars.js. These cards can be filtered with Isotope.
+Pages are build using the [Assemble static site generator](http://assemble.io/) with Grunt build tools and setup by a Yeoman generator. Each page is made up of several Handlebars partials and fed sector-specific data from JSON files in the `src/data` folder.
 
-The sector pages depend primarily on jQuery, Bootstrap, D3, dimple, and the [d3-tip plugin](https://github.com/Caged/d3-tip). Pages that contain maps also use topojson, [d3-legend](http://d3-legend.susielu.com/), and our d3map chart. [Simple Statistics](https://simplestatistics.org/) calculates Jenks breaks for coloring maps.
+The front page is made with the same set of Handlebars templates, but without the sector data, and is largely made up of a container for the [Isotope](https://isotope.metafizzy.co/) jQuery plugin. Using tabletop, data is pulled in from a Google sheet; that data is bound to an html element using D3 and formatted using Handlebars.js. These cards can be filtered with Isotope.
+
+The sector pages depend primarily on jQuery, Bootstrap, D3, dimple, and the [d3-tip plugin](https://github.com/Caged/d3-tip). Pages that contain maps also use topojson, [d3-legend](http://d3-legend.susielu.com/), and our d3map chart. [Simple Statistics](https://simplestatistics.org/) calculates Jenks breaks for coloring maps. Most of these are minified into a `vendor.js` file.
 
 One major improvement would be to write generic functions to build dimple charts; as of now, each chart is built with its own function called by that sector page.
 
-An additional file, `globals.js`, has generic functions for charts, such as mouse events, formatting shortcuts, tooltips for different types of data, and dimple color objects.   
+An additional file, `globals.js`, has generic functions for charts, such as mouse events, formatting shortcuts, tooltips for different types of data, and dimple color objects. In the building process, this is minified along with `d3map.js`.
 
 ## Data
 
@@ -69,9 +68,9 @@ As of June 2017, the shapefiles used here give breakdowns of New Haven by neighb
 
 ## Improvements / long-term to-do
 
-* Find an *actual* web designer to improve styling
-* Move to a build tool such as Gulp---would allow to build libraries from node modules, including custom smaller builds of D3, instead of pulling everything from CDNs
+* ~~Find an *actual* web designer to improve styling~~
+* ~~Move to a build tool such as Gulp---would allow to build libraries from node modules, including custom smaller builds of D3, instead of pulling everything from CDNs~~
 * Encapsulate creation of dimple charts into reusable functions
-* Build html files from templates for more flexibility
+* ~~Build html files from templates for more flexibility~~
 * There are probably plenty of small UI/UX tweaks to make, especially in charts
 * Add cute touches like icons
