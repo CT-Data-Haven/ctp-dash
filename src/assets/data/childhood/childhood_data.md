@@ -8,8 +8,11 @@ As of June 2017, early childhood data includes:
 * [Preschool enrollment by location, 2010-2015](acs_prek_enrollment_trend.csv)
 * [Available slots in childcare, 2014](childcare.csv)
 * [Chronic absenteeism in grades K-3, 2015-16](chronic_absenteeism.csv)
-* [Low-income rates for children under 6 by race, 2015](low_income_kids_by_race.csv)
+* [Low-income rates for children under 6 by race, 2015*](low_income_kids_by_race.csv)
 
 The data is hosted on GitHub in the [`childhood`](./) folder of this repository.
+
+Files marked * come from DataHaven analysis of American Community Survey samples from IPUMS.
+  > Steven Ruggles, J. Trent Alexander, Katie Genadek, Ronald Goeken, Matthew B. Schroeder, and Matthew Sobek. Integrated Public Use Microdata Series: Version 5.0 [Machine-readable database]. Minneapolis, MN: Minnesota Population Center [producer and distributor], 2010.
 
 For technical users or anyone maintaining CTP datasets, [R scripts](../../../../R) are available under the `master` branch with Markdown documentation.

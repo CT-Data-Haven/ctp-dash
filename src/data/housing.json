@@ -57,14 +57,14 @@
                     "n": "5",
                     "chartTitle": "Homeownership rate by age of householder, 2015",
                     "class": "chart240",
-                    "source": "US Census Bureau, American Community Survey",
+                    "source": "DataHaven analysis, American Community Survey via IPUMS",
                     "hasSvg": false
                 }, {
                     "id": "tenure-age-race",
                     "n": "7",
                     "chartTitle": "Homeownership rate by age and race, 2015",
                     "class": "chart240",
-                    "source": "US Census Bureau, American Community Survey",
+                    "source": "DataHaven analysis, American Community Survey via IPUMS",
                     "hasSvg": false
                 }
             ]

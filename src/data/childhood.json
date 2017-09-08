@@ -79,7 +79,7 @@
                     "n": "6",
                     "chartTitle": "Low-income rate by race, ages 0-5, 2015",
                     "class": "chart320",
-                    "source": "US Census Bureau, American Community Survey",
+                    "source": "DataHaven analysis, American Community Survey via IPUMS",
                     "hasSvg": false
                 }
             ]
