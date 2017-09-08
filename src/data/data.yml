@@ -1,5 +1,5 @@
 sectors: [
-    { name: 'literacy', title: 'Adult literacy' },
+    { name: 'literacy', title: 'Adult learning' },
     { name: 'community', title: 'Community cohesion' },
     { name: 'childhood', title: 'Early childhood' },
     { name: 'economy', title: 'Economic development' },

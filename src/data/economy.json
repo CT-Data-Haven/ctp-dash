@@ -1,10 +1,10 @@
 {
     "sector": "economy",
-    "title": "Economic Development",
+    "title": "Economic Activity",
     "shortTitle": "Economy",
-    "longName": "Economic development",
+    "longName": "Economic activity",
     "vision": "All residents benefit from sustained economic growth and a thriving local economy, and all neighborhoods have vibrant centers of commerce, jobs, and community cohesion",
-    "ctpUrl": "economic-development",
+    "ctpUrl": "economic_activity.htm",
     "targets": [
         {
             "name": "Regional competitiveness",

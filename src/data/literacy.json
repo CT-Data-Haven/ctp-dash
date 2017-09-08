@@ -1,10 +1,10 @@
 {
     "sector": "literacy",
-    "title": "Adult Literacy",
-    "shortTitle": "Adult Literacy",
-    "longName": "Adult literacy and life skills",
+    "title": "Adult Learning",
+    "shortTitle": "Adult Learning",
+    "longName": "Adult learning and life skills",
     "vision": "All adults achieve high school literacy and have the life skills they need to succeed in careers and participate in their communities",
-    "ctpUrl": "adult-literacy",
+    "ctpUrl": "adult_learning_n_life_skills.htm",
     "targets": [
         {
             "name": "Literacy",
