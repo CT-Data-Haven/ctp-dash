@@ -280,7 +280,7 @@ h5 {
 
 .grid-item {
   float: left;
-  min-height: 320px;
+  min-height: 260px;
   padding: 10px 14px;
   background: #888;
   color: #333;
@@ -290,6 +290,8 @@ h5 {
   .grid-item > * {
     margin: 0;
     padding: 0; }
+  .grid-item h1 {
+    line-height: 0.85; }
   .grid-item .name {
     font-size: 1.1em;
     padding: 0;
