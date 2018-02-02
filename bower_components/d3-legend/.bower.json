@@ -1,7 +1,7 @@
 {
   "name": "d3-legend",
   "main": "d3-legend.min.js",
-  "version": "2.24.0",
+  "version": "2.25.4",
   "homepage": "https://github.com/susielu/d3-legend",
   "keywords": [
     "d3",
@@ -23,14 +23,13 @@
   "dependencies": {
     "d3": "^4.3.0"
   },
-  "_release": "2.24.0",
+  "_release": "2.25.4",
   "_resolution": {
     "type": "version",
-    "tag": "v2.24.0",
-    "commit": "a0daad1eae28ae17f0bd843ad10ad380793bbef7"
+    "tag": "v2.25.4",
+    "commit": "ad3d5347b6cc0e5e3098fd5b324fc7a9fe808f51"
   },
   "_source": "https://github.com/susielu/d3-legend.git",
   "_target": "^2.24.0",
-  "_originalSource": "d3-legend",
-  "_direct": true
+  "_originalSource": "d3-legend"
 }
